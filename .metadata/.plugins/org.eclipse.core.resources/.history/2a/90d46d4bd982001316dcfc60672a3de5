@@ -1,0 +1,4 @@
+var mainWin = Ti.UI.createWindow({
+	backgroundcolor: ""
+	
+});

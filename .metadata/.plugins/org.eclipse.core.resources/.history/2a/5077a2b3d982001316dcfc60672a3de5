@@ -1,0 +1,10 @@
+var mainWin = Ti.UI.createWindow({
+	backgroundcolor: "#3C7502"
+	
+});
+
+var navWin = Ti.UI.IOS.createNavigationWindow({
+	window: mainWin
+});
+
+navWin.open();

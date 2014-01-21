@@ -4,8 +4,8 @@ var stock = {
 		footTitle: "",
 		"games": [
 			{"title": "Lego Batman", 
-			"rating": "E 10+ - Everyone 10 & up",
-			"rating desc": "Cartoon Violence",
+			"esrbRating": "E 10+ - Everyone 10 & up",
+			"esrbDesc": "Cartoon Violence",
 			"genre": "Action-Adventure",
 			"developer": "Traveller's Tale/TT Fusion",
 			"publisher": " Warner Bros. Interactive Entertainment",
@@ -16,8 +16,8 @@ var stock = {
 			"photo": "photo/Lego_Batman.jpg"},
 			
 			{"title": "Mortal Kombat vs. DC Universe", 
-			"rating": "T - Teen",
-			"rating desc": "Blood, Suggestive Theme, Violence",
+			"esrbRating": "T - Teen",
+			"esrbDesc": "Blood, Suggestive Theme, Violence",
 			"genre": "Fighting",
 			"developer": "Warner Bros. Interactive Entertainment",
 			"publisher": "Midway Games",
@@ -28,8 +28,8 @@ var stock = {
 			"photo": "photo/20Mortal_Kombat_vs._DC_Universe_Coverart.png"},
 			
 			{"title": "The Elder Scroll V: Skyrim", 
-			"rating": "M -Mature",
-			"rating desc": "Blood and Gore, Intense Violence, Sexual Theme, Use of Alcohol",
+			"esrbrating": "M -Mature",
+			"esrbDesc": "Blood and Gore, Intense Violence, Sexual Theme, Use of Alcohol",
 			"genre": "Action Role-Playing",
 			"developer": "Bethesda Game Studios",
 			"publisher": "Bethesda Softworks",
@@ -40,8 +40,8 @@ var stock = {
 			"photo": "photo/Skyrim.jpg"},
 			
 			{"title": "Bully", 
-			"rating": "T - Teen",
-			"rating desc": "Animated Blood, Crude Humor, Language, Sexual Theme, Use of Alcohol & Tobacco, Violence",
+			"esrbrating": "T - Teen",
+			"esrbDesc": "Animated Blood, Crude Humor, Language, Sexual Theme, Use of Alcohol & Tobacco, Violence",
 			"genre": "Action-Adventure",
 			"developer": "Rockstar New England",
 			"publisher": "Rockstar Games",
@@ -50,21 +50,10 @@ var stock = {
 			"co-op": "No",
 			"players": "1",
 			"photo": "photo/Bully.jpg"},
-			{"title": "", 
-			"rating": "",
-			"rating desc": "",
-			"genre": "",
-			"developer": "",
-			"publisher": "",
-			"system": "",
-			"modes": "Single and Multiplayer",
-			"co-op": "N/A",
-			"players": "1-2",
-			"photo": "photo/"},
-			
+				
 			{"title": "Left 4 Dead", 
-			"rating": "M - Mature",
-			"rating desc": "Blood and Gore, Intense Violence, Language",
+			"esrbRating": "M - Mature",
+			"esrbDesc": "Blood and Gore, Intense Violence, Language",
 			"genre": "First-Person Shooter/Survival Horror",
 			"developer": "Valve Corporation",
 			"publisher": "Valve Corporation",
@@ -75,8 +64,8 @@ var stock = {
 			"photo": "photo/Left_4_Dead.jpg"},
 			
 			{"title": "Dead Rising 2", 
-			"rating": "M - Mature",
-			"rating desc": "Blood and Gore, Use of Alcohol, Intense Violence, Language, Sexual Theme",
+			"esrbRating": "M - Mature",
+			"esrbDesc": "Blood and Gore, Use of Alcohol, Intense Violence, Language, Sexual Theme",
 			"genre": "Survival Horror",
 			"developer": "Blue Castle Games",
 			"publisher": "Capcom",
@@ -87,8 +76,8 @@ var stock = {
 			"photo": "photo/550w_gaming_deadrising2_box.jpg"},
 			
 			{"title": "Tiger Woods PGA Tour 14", 
-			"rating": "E - Everyone",
-			"rating desc": "Golf Simulation",
+			"esrbRating": "E - Everyone",
+			"esrbDesc": "Golf Simulation",
 			"genre": "Sports",
 			"developer": "EA Tiburon",
 			"publisher": "EA Sports",
@@ -99,8 +88,8 @@ var stock = {
 			"photo": "photo/tiger_woods_pga_tour_14.jpg"},
 			
 			{"title": "Tom Clancy's: Splinter Cell Blacklist", 
-			"rating": "M - Mature",
-			"rating desc": "Blood and Gore, Drug Reference, Intense Violence, Strong Language",
+			"esrbRating": "M - Mature",
+			"esrbDesc": "Blood and Gore, Drug Reference, Intense Violence, Strong Language",
 			"genre": "Action-Adventure",
 			"developer": "Ubisoft",
 			"publisher": "Ubisoft",
@@ -111,8 +100,8 @@ var stock = {
 			"photo": "photo/Splinter_Cell_Blacklist.jpg"},
 			
 			{"title": "Lego Marvel Super Heroes", 
-			"rating": "E 10+ - Everone 10 & up",
-			"rating desc": "Cartoon Violence",
+			"esrbRating": "E 10+ - Everone 10 & up",
+			"esrbDesc": "Cartoon Violence",
 			"genre": "Action-Adventure",
 			"developer": "TT Games",
 			"publisher": "Warner Bros. Interactive Entertainment",
@@ -123,8 +112,8 @@ var stock = {
 			"photo": "photo/LEGO_Marvel_Super_Heroes_box_art.jpg"},
 			
 			{"title": "Little Big Planet 2", 
-			"rating": "E - Everyone",
-			"rating desc": "Comic Mischief, Mild Cartoon Violence",
+			"esrbRating": "E - Everyone",
+			"esrbDesc": "Comic Mischief, Mild Cartoon Violence",
 			"genre": "Puzzle",
 			"developer": "Media Molecule",
 			"publisher": "Sony Computer Entertainment",
@@ -136,5 +125,3 @@ var stock = {
 		]		
 	}
 };
-
-
