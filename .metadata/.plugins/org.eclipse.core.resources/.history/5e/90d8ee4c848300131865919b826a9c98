@@ -54,7 +54,7 @@ signUpButton.addEventListener("click", function(e){
 	var passwordLabelField = Ti.UI.createLabel({
 		text: "Password",
 		font: {fontSize: 15, fontFamily: "Times New Roman"},
-		top: (emailTextField.top + emailTextField.height) + 20,
+		top: (emailTextField.top + email.TextField.height) + 20,
 		left: 35
 	});
 	

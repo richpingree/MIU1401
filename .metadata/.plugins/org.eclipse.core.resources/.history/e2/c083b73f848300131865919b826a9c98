@@ -36,35 +36,19 @@ signUpButton.addEventListener("click", function(e){
 		height: 30
 	});
 	
-	var emailLabelField = Ti.UI.createLabel({
-		text: "E-mail Address",
+	var passwordLabelField = Ti.UI.createLabel({
+		text: "Password",
 		font: {fontSize: 15, fontFamily: "Times New Roman"},
 		top: (LastNameTextField.top + LastNameTextField.height) + 20,
 		left: 35
 	});
 	
-	var emailTextField = Ti.UI.createTextField({
-		borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
-		color: '#336699',
-		top: emailLabelField.top + 20,
-		width: 250,
-		height: 30
-	});
-	
-	var passwordLabelField = Ti.UI.createLabel({
-		text: "Password",
-		font: {fontSize: 15, fontFamily: "Times New Roman"},
-		top: (emailTextField.top + emailTextField.height) + 20,
-		left: 35
-	});
-	
-	var passwordTextField =Ti.UI.createTextField({
+	var passwordTextField = Ti.UI.createTextField({
 		borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
 		color: '#336699',
 		top: passwordLabelField.top + 20,
 		width: 250,
 		height: 30
-		
 	});
 	
 	var confirmPassLabelField = Ti.UI.createLabel({
@@ -104,6 +88,6 @@ signUpButton.addEventListener("click", function(e){
 		height: 30
 		
 	});
-signUpWin.add(FirstNameTextField, FirstNameFieldLabel, LastNameFieldLabel, LastNameTextField, emailLabelField, emailTextField, passwordLabelField, passwordTextField, confirmPassLabelField, confirmPassTextField, smallCancelButton, smallSignUpButton);
+signUpWin.add(FirstNameTextField, FirstNameFieldLabel, LastNameFieldLabel, LastNameTextField, passwordLabelField, passwordTextField, confirmPassLabelField, confirmPassTextField, smallCancelButton, smallSignUpButton);
 navWin.openWindow(signUpWin), {animate: true};
 });
