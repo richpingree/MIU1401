@@ -1,0 +1,68 @@
+var mainWin = Ti.UI.createWindow({
+	modal: true,
+	backgroundColor: "#0f628b"
+	
+});
+
+var navWin = Ti.UI.iOS.createNavigationWindow({
+	window: mainWin
+});
+
+var nameTextField = Ti.UI.createTextField({
+ 	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	color: '#336699',
+	top: 150, 
+	width: 250, 
+	height: 30
+});
+
+var nameFieldLabel = Ti.UI.createLabel({
+	text: "Enter User Name or E-mail.",
+	font: {fontSize: 15, fontFamily: "Times New Roman"},
+	top: (nameTextField.top - 20),
+	left: 35
+});
+
+var passFieldLabel = Ti.UI.createLabel({
+	text: "Password",
+	font: {fontSize: 15, fontFamily: "Times New Roman"},
+	top: (nameTextField.top + nameTextField.height) + 10,
+	left: 35
+});
+
+var passTextField = Ti.UI.createTextField({
+	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	color: '#336699',
+	top: passFieldLabel.top + 20, 
+	width: 250, 
+	height: 30
+});
+
+var loginButton = Ti.UI.createButton({
+	title: "Login",
+	backgroundColor: "green",
+	color: "#000",
+	borderRadius: 5,
+	top: (passTextField.top + passTextField.height) + 15,
+	width: 250,
+	height: 30
+	
+});
+
+var signUpButton = Ti.UI.createButton({
+	title: "Sign Up",
+	backgroundColor: "red",
+	color: "#000",
+	borderRadius: 5,
+	top: (loginButton.top + loginButton.height) + 15,
+	width: 250,
+	height: 30
+	
+});
+
+var mediaFile = require('data');
+var medisFile2 = require('signup');
+
+
+mainWin.add(nameTextField, nameFieldLabel, passFieldLabel, passTextField, loginButton, signUpButton);
+navWin.open();

@@ -61,7 +61,8 @@ var signUpButton = Ti.UI.createButton({
 });
 
 var mediaFile = require('data');
-var medisFile2 = require('signup');
+var mediaFile2 = require('signup');
+var mediaFile3 = require('thumblist');
 
 
 mainWin.add(nameTextField, nameFieldLabel, passFieldLabel, passTextField, loginButton, signUpButton);

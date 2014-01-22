@@ -125,3 +125,23 @@ var stock = {
 		]		
 	}
 };
+
+// for(n in stock){
+	// for(var i = 0; i<stock[n].games.length; i++){
+		// var listview = Ti.UI.createView({
+			// title: stock[n].games[i].title,
+			// esrb: stock[n].games[i].esrbRating,
+			// desc: stock[n].games[i].esrbDesc,
+			// genre: stock[n].games[i].genre,
+			// dev: stock[n].games[i].developer,
+			// pub: stock[n].games[i].publisher,
+			// sys: stock[n].games[i].system,
+			// modes: stock[n].games[i].modes,
+			// coop: stock[n].games[i].co-op,
+			// play: stock[n].games[i].players,
+			// photo: stock[n].games[i].photo,
+			// hasChild: true			
+		// });
+	// };
+// 	
+// };
