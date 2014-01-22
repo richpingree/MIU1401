@@ -11,7 +11,7 @@ var navWin = Ti.UI.iOS.createNavigationWindow({
 var nameTextField = Ti.UI.createTextField({
  	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
 	color: '#336699',
-	top: 150, 
+	top: 100, 
 	width: 250, 
 	height: 30
 });
@@ -19,7 +19,7 @@ var nameTextField = Ti.UI.createTextField({
 var nameFieldLabel = Ti.UI.createLabel({
 	text: "Enter User Name or E-mail.",
 	font: {fontSize: 15, fontFamily: "Times New Roman"},
-	top: (nameTextField.top - 20),
+	top: 100,
 	left: 35
 });
 
@@ -38,31 +38,5 @@ var passTextField = Ti.UI.createTextField({
 	height: 30
 });
 
-var loginButton = Ti.UI.createButton({
-	title: "Login",
-	backgroundColor: "green",
-	color: "#000",
-	borderRadius: 5,
-	top: (passTextField.top + passTextField.height) + 15,
-	width: 250,
-	height: 30
-	
-});
-
-var signUpButton = Ti.UI.createButton({
-	title: "Sign Up",
-	backgroundColor: "red",
-	color: "#000",
-	borderRadius: 5,
-	top: (loginButton.top + loginButton.height) + 15,
-	width: 250,
-	height: 30
-	
-});
-
-var mediaFile = require('data');
-var medisFile2 = require('signup');
-
-
-mainWin.add(nameTextField, nameFieldLabel, passFieldLabel, passTextField, loginButton, signUpButton);
+mainWin.add(nameTextField, nameFieldLabel, passFieldLabel, passTextField);
 navWin.open();

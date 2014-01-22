@@ -51,7 +51,7 @@ var loginButton = Ti.UI.createButton({
 
 var signUpButton = Ti.UI.createButton({
 	title: "Sign Up",
-	backgroundColor: "red",
+	backgroundColor: "blue",
 	color: "#000",
 	borderRadius: 5,
 	top: (loginButton.top + loginButton.height) + 15,
@@ -59,10 +59,6 @@ var signUpButton = Ti.UI.createButton({
 	height: 30
 	
 });
-
-var mediaFile = require('data');
-var medisFile2 = require('signup');
-
 
 mainWin.add(nameTextField, nameFieldLabel, passFieldLabel, passTextField, loginButton, signUpButton);
 navWin.open();

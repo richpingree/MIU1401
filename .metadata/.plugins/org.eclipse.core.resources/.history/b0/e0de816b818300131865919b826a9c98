@@ -60,9 +60,5 @@ var signUpButton = Ti.UI.createButton({
 	
 });
 
-var mediaFile = require('data');
-var medisFile2 = require('signup');
-
-
 mainWin.add(nameTextField, nameFieldLabel, passFieldLabel, passTextField, loginButton, signUpButton);
 navWin.open();
