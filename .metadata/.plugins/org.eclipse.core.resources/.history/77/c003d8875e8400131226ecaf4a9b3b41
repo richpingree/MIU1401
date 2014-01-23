@@ -1,0 +1,249 @@
+signUpButton.addEventListener("click", function(e){
+
+	var signUpWin = Ti.UI.createWindow({
+		modal: true,
+		backgroundColor: "#0f628b"
+	});
+	
+	var FirstNameTextField = Ti.UI.createTextField({
+	 	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+		color: '#336699',
+		top: 20, 
+		width: 250, 
+		height: 30
+	});
+	
+	var FirstNameFieldLabel = Ti.UI.createLabel({
+		text: "First Name.",
+		font: {fontSize: 15, fontFamily: "Times New Roman"},
+		top: (FirstNameTextField.top - 20),
+		left: 35
+	});
+	
+	var LastNameFieldLabel = Ti.UI.createLabel({
+		text: "Last Name",
+		font: {fontSize: 15, fontFamily: "Times New Roman"},
+		top: (FirstNameTextField.top + FirstNameTextField.height) + 20,
+		left: 35
+	});
+		
+		
+	var LastNameTextField = Ti.UI.createTextField({
+		borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+		color: '#336699',
+		top: LastNameFieldLabel.top + 20,
+		width: 250,
+		height: 30
+	});
+	
+	var emailLabelField = Ti.UI.createLabel({
+		text: "E-mail Address",
+		font: {fontSize: 15, fontFamily: "Times New Roman"},
+		top: (LastNameTextField.top + LastNameTextField.height) + 20,
+		left: 35
+	});
+	
+	var emailTextField = Ti.UI.createTextField({
+		borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+		color: '#336699',
+		top: emailLabelField.top + 20,
+		width: 250,
+		height: 30
+	});
+	
+	var passwordLabelField = Ti.UI.createLabel({
+		text: "Password",
+		font: {fontSize: 15, fontFamily: "Times New Roman"},
+		top: (emailTextField.top + emailTextField.height) + 20,
+		left: 35
+	});
+	
+	var passwordTextField =Ti.UI.createTextField({
+		borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+		color: '#336699',
+		top: passwordLabelField.top + 20,
+		width: 250,
+		height: 30
+		
+	});
+	
+	var confirmPassLabelField = Ti.UI.createLabel({
+		text: "Confirm Password",
+		font: {fontSize: 15, fontFamily: "Times New Roman"},
+		top: (passwordTextField.top + passwordTextField.height) + 20,
+		left: 35
+	});
+	
+	var confirmPassTextField = Ti.UI.createTextField({
+		borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+		color: '#336699',
+		top: confirmPassLabelField.top + 20,
+		width: 250,
+		height: 30
+	});
+	
+	var smallCancelButton = Ti.UI.createButton({
+		title: "Cancel",
+		backgroundColor: "red",
+		color: "#000",
+		borderRadius: 5,
+		top: (confirmPassTextField.top + confirmPassTextField.height) + 15,
+		left: 35,
+		width: 120,
+		height: 30
+	});
+	
+	var smallSignUpButton = Ti.UI.createButton({
+		title: "Sign Up",
+		backgroundColor: "green",
+		color: "#000",
+		borderRadius: 5,
+		top: (confirmPassTextField.top + confirmPassTextField.height) + 15,
+		right: 35,
+		width: 120,
+		height: 30
+		
+	});
+signUpWin.add(FirstNameTextField, FirstNameFieldLabel, LastNameFieldLabel, LastNameTextField, emailLabelField, emailTextField, passwordLabelField, passwordTextField, confirmPassLabelField, confirmPassTextField, smallCancelButton, smallSignUpButton);
+navWin.openWindow(signUpWin), {animate: true};
+});
+loginButton.addEventListener("click", function(e){
+	var dataWin = Ti.UI.createWindow({
+		title: "Video Games",
+		modal: true,
+		backgroundColor: "#595BC2"
+	});
+		dataWin.add(table);
+		navWin.openWindow(dataWin, {animate: true});
+});
+
+table.addEventListener("click", function(event){
+	var detailWin = Ti.UI.createWindow({
+		backgroundColor: "#595BC2",
+		title: event.source.title,
+		modal: true
+	});
+	var detailView = Ti.UI.createScrollView({
+		showVerticalScaleIndicator: true,
+		layout: "vertical"
+		
+	});
+	var logoImage = Ti.UI.createImageView({
+		image: event.source.photo,
+		borderRadius: 20,
+		height: 200,
+		top: 15,
+		left: 20,
+		right: 20
+		
+	});
+	var titleText = Ti.UI.createLabel({
+		text: "Title: " + event.source.title,
+		color: "#fff",
+		left: 10,
+		font: {fontSize: 15, fontFamily: "Times New Roman"}
+	});
+	var esrbText = Ti.UI.createLabel({
+		text: "ESRB Rating: " + event.source.esrb,
+		color: "#fff",
+		top: (titleText.top + 15),
+		left: 10,
+		font: {fontSize: 15, fontFamily: "Times New Roman"}
+	});
+	var esrbDescText = Ti.UI.createLabel({
+		text: "ESRB Description: " + event.source.desc,
+		color: "#fff",
+		top: (esrbText.top + 15),
+		left: 10,
+		font: {fontSize: 15, fontFamily: "Times New Roman"}
+	});
+	var genreText = Ti.UI.createLabel({
+		text: "Genre: " + event.source.genre,
+		color: "#fff",
+		top: (esrbDescText.top + 15),
+		left: 10,
+		font: {fontSize: 15, fontFamily: "Times New Roman"}
+	});
+	var devText = Ti.UI.createLabel({
+		text: "Developer: " + event.source.dev,
+		color: "#fff",
+		top: (genreText.top + 15),
+		left: 10,
+		font: {fontSize: 15, fontFamily: "Times New Roman"}
+	});
+	var pubText = Ti.UI.createLabel({
+		text: "Publisher: " + event.source.pub,
+		color: "#fff",
+		top: (devText.top + 15),
+		left: 10,
+		font: {fontSize: 15, fontFamily: "Times New Roman"}
+	});
+	var sysText = Ti.UI.createLabel({
+		text: "System(s): " + event.source.sys,
+		color: "#fff",
+		top: (pubText.top + 15),
+		left: 10,
+		font: {fontSize: 15, fontFamily: "Times New Roman"}
+	});
+	var modeText = Ti.UI.createLabel({
+		text: "Game Modes: " + event.source.modes,
+		color: "#fff",
+		top: (sysText.top + 15),
+		left: 10,
+		font: {fontSize: 15, fontFamily: "Times New Roman"}
+	});
+	var coopText = Ti.UI.createLabel({
+		text: "Co-op: " + event.source.coop,
+		color: "#fff",
+		top: (modeText.top + 15),
+		left: 10,
+		font: {fontSize: 15, fontFamily: "Times New Roman"}
+	});
+	var playersText = Ti.UI.createLabel({
+		text: "Number of Players: " + event.source.play,
+		color: "#fff",
+		top: (coopText.top + 15),
+		left: 10,
+		font: {fontSize: 15, fontFamily: "Times New Roman"}
+	});
+	var reviewLabel = Ti.UI.createLabel({
+		text: "Reviews:",
+		color: "#fff",
+		top: (playersText.top + 20),
+		left: 10,
+		font: {fontSize: 15, fontFamily: "Times New Roman"}
+	});
+	var rateLabel = Ti.UI.createLabel({
+		text: "Rating: " + event.source.rate,
+		color: "#fff",
+		top: (reviewLabel.top + 20),
+		left: 15,
+		font: {fontSize: 15, fontFamily: "Times New Roman"}
+	});
+	var userLabel = Ti.UI.createLabel({
+		text: "User Name: " + event.source.user,
+		color: "#fff",
+		top: (rateLabel.top + 20),
+		left: 15,
+		font: {fontSize: 15, fontFamily: "Times New Roman"}
+	});
+	var dateLabel = Ti.UI.createLabel({
+		text: "Review Date: " + event.source.date,
+		color: "#fff",
+		top: (userLabel.top + 20),
+		left: 15,
+		font: {fontSize: 15, fontFamily: "Times New Roman"}
+	});
+	var userReviewLabel = Ti.UI.createLabel({
+		text: "Review: " + event.source.review,
+		color: "#fff",
+		top: (dateLabel.top + 20),
+		left: 15,
+		font: {fontSize: 15, fontFamily: "Times New Roman"}
+	});
+	detailView.add(logoImage, titleText, esrbText, esrbDescText, genreText, devText, pubText, sysText, modeText, coopText, playersText, reviewLabel, rateLabel, userLabel, dateLabel, userReviewLabel);
+	detailWin.add(detailView);
+	navWin.openWindow(detailWin, {animate: true});
+	
+});
+table.setData(sections);

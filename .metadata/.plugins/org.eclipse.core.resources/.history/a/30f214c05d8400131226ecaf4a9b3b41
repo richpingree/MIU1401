@@ -339,4 +339,3 @@ table.addEventListener("click", function(event){
 	
 });
 table.setData(sections);
-
