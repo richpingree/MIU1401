@@ -1,0 +1,29 @@
+var photoList = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, "photos");
+var imageList = photoList.getDirectoryListing();
+
+loginButton.addEventListener("click", function(e){
+	var listWin = Ti.UI.createWindow({
+		modal: true,
+		backgroundColor: "#0f628b"
+	});
+	
+	var listScrollView = Ti.UI.createScrollView({
+		showVerticalScaleIndicator: true,
+		layout: "vertical"
+	});
+	for(var i=0; i<imageList.length; i++){
+		var imageContainer = Ti.UI.createView({
+			top: 0,
+			left: 0,
+			width: 70,
+			height: 100
+		});
+		var photo = Ti.UI.createImageView({
+			image: imageList[i]
+			
+		});
+	}
+	imageContainer.add(photo);
+	listWin.add(listScrollView);
+	navWin.openWindow(listWin), {animate: true};
+});

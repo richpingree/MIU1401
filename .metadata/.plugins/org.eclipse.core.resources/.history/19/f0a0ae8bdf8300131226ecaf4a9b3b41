@@ -1,0 +1,203 @@
+var stock = {
+	"inventory":{
+		headTitle: "Video Games",
+		"games": [
+			{"title": "Title: Lego Batman", 
+			"esrbRating": "ESRB Rating: E 10+ - Everyone 10 & up",
+			"esrbDesc": "ESRB Description: Cartoon Violence",
+			"genre": "Genre: Action-Adventure",
+			"developer": "Developer: Traveller's Tale/TT Fusion",
+			"publisher": "Publisher: Warner Bros. Interactive Entertainment",
+			"system": "System(s): Cloud(OnLive), Mac OS X, Microsoft Windows, Mobile Phones, Nintendo DS, Playstation 2, Playstation 3, PSP, Wii, Xbox 360",
+			"modes": "Modes: Single and Co-op",
+			"co-op": "Co-op: Yes",
+			"players": "Number of Players: 1-2",
+			"photo": "photos/Lego_Batman.jpg"},
+			
+			{"title": "Title: Mortal Kombat vs. DC Universe", 
+			"esrbRating": "ESRB Rating: T - Teen",
+			"esrbDesc": "ESRB Description: Blood, Suggestive Theme, Violence",
+			"genre": "Genre: Fighting",
+			"developer": "Developer: Warner Bros. Interactive Entertainment",
+			"publisher": "Publisher: Midway Games",
+			"system": "System(s): Playstation 3, Xbox 360",
+			"modes": "Modes: Single and Multiplayer",
+			"co-op": "Co-op: N/A",
+			"players": "Number of Players: 1-2",
+			"photo": "photos/20Mortal_Kombat_vs._DC_Universe_Coverart.png"},
+			
+			{"title": "Title: The Elder Scroll V: Skyrim", 
+			"esrbrating": "ESRB Rating: M -Mature",
+			"esrbDesc": "ESRB: Description: Blood and Gore, Intense Violence, Sexual Theme, Use of Alcohol",
+			"genre": "Genre: Action Role-Playing",
+			"developer": "Developer: Bethesda Game Studios",
+			"publisher": "Publisher: Bethesda Softworks",
+			"system": "System(s): Microsoft Windows, Playstation 3, Xbox 360",
+			"modes": "Modes: Single",
+			"co-op": "Co-op: N/A",
+			"players": "Number of Players: 1",
+			"photo": "photos/Skyrim.jpg"},
+			
+			{"title": "Title: Bully", 
+			"esrbrating": "ESRB Rating: T - Teen",
+			"esrbDesc": "ESRB Description: Animated Blood, Crude Humor, Language, Sexual Theme, Use of Alcohol & Tobacco, Violence",
+			"genre": "Genre: Action-Adventure",
+			"developer": "Developer: Rockstar New England",
+			"publisher": "Publisher: Rockstar Games",
+			"system": "System(s): Microsoft Windows, Playstation 2, Wii, Xbox 360",
+			"modes": "Modes: Single",
+			"co-op": "Co-op: No",
+			"players": "Number of Players: 1",
+			"photo": "photos/Bully.jpg"},
+				
+			{"title": "Title: Left 4 Dead", 
+			"esrbRating": "ESRB Rating: M - Mature",
+			"esrbDesc": "ESRB Description: Blood and Gore, Intense Violence, Language",
+			"genre": "Genre: First-Person Shooter/Survival Horror",
+			"developer": "Developer: Valve Corporation",
+			"publisher": "Publisher: Valve Corporation",
+			"system": "System(s): Microsoft Windows, Xbox 360, OS X",
+			"modes": "Modes: Single and Multiplayer",
+			"co-op": "Co-op: Yes",
+			"players": "Number of Players: 1-2, Multiplayer: 2-8",
+			"photo": "photos/Left_4_Dead.jpg"},
+			
+			{"title": "Title: Dead Rising 2", 
+			"esrbRating": "ESRB Rating: M - Mature",
+			"esrbDesc": "ESRB Description: Blood and Gore, Use of Alcohol, Intense Violence, Language, Sexual Theme",
+			"genre": "Genre: Survival Horror",
+			"developer": "Developer: Blue Castle Games",
+			"publisher": "Publisher: Capcom",
+			"system": "System(s): Microsoft Windows, Playstation 3, Xbox 360",
+			"modes": "Modes: Single and Multiplayer",
+			"co-op": "Co-op: Yes(Online Only)",
+			"players": "Number of Players: 1-2, Multiplayer: 2-4",
+			"photo": "photos/550w_gaming_deadrising2_box.jpg"},
+			
+			{"title": "Title: Tiger Woods PGA Tour 14", 
+			"esrbRating": "ESRB Rating: E - Everyone",
+			"esrbDesc": "ESRB Description: Golf Simulation",
+			"genre": "Genre: Sports",
+			"developer": "Developer: EA Tiburon",
+			"publisher": "Publisher: EA Sports",
+			"system": "System(s): Playstation 3, Xbox 360",
+			"modes": "Mode: Single and Multiplayer",
+			"co-op": "Co-op: Yes",
+			"players": "Number of Players: 1-4",
+			"photo": "photos/tiger_woods_pga_tour_14.jpg"},
+			
+			{"title": "Title: Tom Clancy's: Splinter Cell Blacklist", 
+			"esrbRating": "ESRB Rating: M - Mature",
+			"esrbDesc": "ESRB Description: Blood and Gore, Drug Reference, Intense Violence, Strong Language",
+			"genre": "Genre: Action-Adventure",
+			"developer": "Developer: Ubisoft",
+			"publisher": "Publisher: Ubisoft",
+			"system": "System(s): Microsoft Windows, Playstation 3, Wii U, Xbox 360",
+			"modes": "Mode: Single and Multiplayer",
+			"co-op": "Co-op: Yes",
+			"players": "Number of Players: 1-2, Multiplayer: 2-8",
+			"photo": "photos/Splinter_Cell_Blacklist.jpg"},
+			
+			{"title": "Title: Lego Marvel Super Heroes", 
+			"esrbRating": "ESRB Rating: E 10+ - Everone 10 & up",
+			"esrbDesc": "ESRB Description: Cartoon Violence",
+			"genre": "Genre: Action-Adventure",
+			"developer": "Developer: TT Games",
+			"publisher": "Publisher: Warner Bros. Interactive Entertainment",
+			"system": "System(s): Microsoft Windows, Nintendo DS, Nintendo 3DS, Playstation 3, Playstation 4, Wii U, Xbox 360, Xbox One",
+			"modes": "Modes: Single and Multiplayer",
+			"co-op": "Co-op: Yes",
+			"players": "Number of Players: 1-2",
+			"photo": "photos/LEGO_Marvel_Super_Heroes_box_art.jpg"},
+			
+			{"title": "Title: Little Big Planet 2", 
+			"esrbRating": "ESRB Rating: E - Everyone",
+			"esrbDesc": "ESRB Description: Comic Mischief, Mild Cartoon Violence",
+			"genre": "Genre: Puzzle",
+			"developer": "Developer: Media Molecule",
+			"publisher": "Publisher: Sony Computer Entertainment",
+			"system": "System(s): Playstation 3",
+			"modes": "Modes: Single and Multiplayer",
+			"coop": "Co-op: Yes",
+			"players": "Number of Players: 1-4",
+			"photo": "photos/little_big_planet_2_boxart.jpg"}
+		]
+	}			
+};
+
+var table = Ti.UI.createTableView({
+	style: Ti.UI.iPhone.TableViewStyle.GROUPED
+	
+});
+
+var sections = [];
+for(n in stock){
+	var tableSecs = Ti.UI.createTableViewSection({
+		headerTitle: stock[n].headTitle
+	});
+	for(var i = 0; i<stock[n].games.length; i++){
+		var theRow = Ti.UI.createTableViewRow({
+			title: stock[n].games[i].title,
+			esrb: stock[n].games[i].esrbRating,
+			desc: stock[n].games[i].esrbDesc,
+			genre: stock[n].games[i].genre,
+			dev: stock[n].games[i].developer,
+			pub: stock[n].games[i].publisher,
+			sys: stock[n].games[i].system,
+			modes: stock[n].games[i].modes,
+			coop: stock[n].games[i].coop,
+			play: stock[n].games[i].players,
+			photo: stock[n].games[i].photo,
+			hasChild: true
+		});
+		tableSecs.add(theRow);
+
+	};
+	sections.push(tableSecs);
+};
+
+loginButton.addEventListener("click", function(e){
+	var dataWin = Ti.UI.createWindow({
+		title: "Video Games",
+		modal: true,
+		backgroundColor: "#595BC2"
+	});
+		dataWin.add(table);
+		navWin.openWindow(dataWin, {animate: true});
+});
+
+table.addEventListener("click", function(event){
+	var detailWin = Ti.UI.createWindow({
+		backgroundColor: "#595BC2",
+		title: event.source.title,
+		modal: true
+	});
+	var logoImage = Ti.UI.createImageView({
+		image: event.source.photo,
+		borderRadius: 20,
+		height: 200,
+		top: 15,
+		left: 20,
+		right: 20
+		
+	});
+	var titleText = Ti.UI.createLabel({
+		text: event.source.title,
+		color: "#fff",
+		top: (logoImage.top + logoImage.height) + 15,
+		left: 10,
+		font: {fontSize: 15, fontFamily: "Times New Roman"}
+	});
+	var esrbText = Ti.UI.createLabel({
+		text: event.source.esrb,
+		color: "#fff",
+		top: (titleText.top + 15),
+		left: 10,
+		font: {fontSize: 15, fontFamily: "Times New Roman"}
+	});
+	
+	detailWin.add(esrbText, titleText, logoImage);
+	navWin.openWindow(detailWin, {animate: true});
+	
+});
+table.setData(sections);
