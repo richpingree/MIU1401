@@ -188,7 +188,7 @@ for(n in stock){
 			play: stock[n].games[i].players,
 			rate: stock[n].games[i].rate,
 			user: stock[n].games[i].user,
-			date: stock[n].games[i].date,
+			date: stock[n].games[i].user,
 			review: stock[n].games[i].review,
 			photo: stock[n].games[i].photo,
 			hasChild: true
