@@ -1,7 +1,9 @@
 =run
-LAST_LAUNCH_TIMESTAMP=1390526779330
+LAST_LAUNCH_TIMESTAMP=1391013728412
 Pingree_Richard_Prototype1\:launchMode=run
 Pingree_Richard_Prototype1\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.iphone.launchShortcut.iPhone Retina (3.5 inch)
+Pingree_Richard_UtilityApp\:launchMode=run
+Pingree_Richard_UtilityApp\:launchShortcut=com.appcelerator.titanium.mobile.ui.android.device.launchShortcut
 eclipse.preferences.version=1
 preference.show.console.onError=true
 preference.studio.perspective.version=103
