@@ -91,7 +91,6 @@ var usTextLabel = Ti.UI.createLabel({
 var usTextField = Ti.UI.createTextField({
 	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
 	color: "#336699",
-	value: "1",
 	width: 125,
 	height: 30,
 	top: (usTextLabel.top + 20),
@@ -120,7 +119,6 @@ var poundsTextLabel = Ti.UI.createLabel({
 var poundsTextField = Ti.UI.createTextField({
 	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
 	color: "#336699",
-	value: "1.33",
 	width: 125,
 	height: 30,
 	top: poundsTextLabel.top + 20,
@@ -131,7 +129,6 @@ var poundsConvertButton = Ti.UI.createButton({
 	title: "Convert to Dollars",
 	backgroundColor: "#C0C0C0",
 	color: "#000",
-	font: {fontSize: 12},
 	borderRadius: 5,
 	top: poundsTextField.top,
 	width: 126,
