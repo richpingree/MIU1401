@@ -24,7 +24,6 @@ var userInputHint = Ti.UI.createLabel({
 var emailFieldLabel = Ti.UI.createLabel({
 	text: "Enter Email Address",
 	font: {fontSize: 15, fontFamily: "Times New Roman"},
-	top: 15,
 	//top: (userNameTextField.top + userNameTextField.height) + 20,
 	left: 35
 });
@@ -40,7 +39,6 @@ var emailTextField = Ti.UI.createTextField({
 var passLabelField = Ti.UI.createLabel({
 	text: "Create Password",
 	font: {fontSize: 15, fontFamily: "Times New Roman"},
-	top: 15,
 	//top: (emailTextField.top + emailTextField.height) + 20,
 	left: 35
 });
@@ -63,7 +61,6 @@ var passHintFieldLabel = Ti.UI.createLabel({
 var confirmPassFieldLabel = Ti.UI.createLabel({
 	text: "Confirm Password.",
 	font: {fontSize: 15, fontFamily: "Times New Roman"},
-	top: 15,
 	//top: (passTextField.top + passTextField.height) + 20,
 	left: 35
 });
@@ -81,7 +78,6 @@ var doneButton = Ti.UI.createButton({
 	backgroundColor: "green",
 	color: "#000",
 	borderRadius: 5,
-	top: 20,
 	//top: (confirmPassTextField.top + confirmPassTextField.height) + 15,
 	width: 250,
 	height: 30

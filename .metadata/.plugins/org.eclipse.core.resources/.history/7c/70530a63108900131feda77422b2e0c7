@@ -81,7 +81,7 @@ var doneButton = Ti.UI.createButton({
 	backgroundColor: "green",
 	color: "#000",
 	borderRadius: 5,
-	top: 20,
+	top: 15,
 	//top: (confirmPassTextField.top + confirmPassTextField.height) + 15,
 	width: 250,
 	height: 30

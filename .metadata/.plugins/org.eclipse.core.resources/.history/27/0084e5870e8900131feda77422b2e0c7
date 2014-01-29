@@ -17,7 +17,7 @@ var nameTextField = Ti.UI.createTextField({
 });
 
 var nameFieldLabel = Ti.UI.createLabel({
-	text: "Enter User Name.",
+	text: "Enter User Name or E-mail.",
 	font: {fontSize: 15, fontFamily: "Times New Roman"},
 	top: (nameTextField.top - 20),
 	left: 35
@@ -60,7 +60,7 @@ var signUpButton = Ti.UI.createButton({
 	
 });
 
-//var mediaFile = require('');
+var mediaFile = require('');
 var mediaFile2 = require('signup');
 
 
