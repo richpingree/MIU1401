@@ -1,5 +1,6 @@
 var userNameTextField = Ti.UI.createTextField({
 	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	value: "",
 	color: "#336699",
 	width: 250,
 	height: 30
@@ -41,6 +42,7 @@ var passLabelField = Ti.UI.createLabel({
 
 var passTextField = Ti.UI.createTextField({
 	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	value: "",
 	color: "#336699",
 	width: 250,
 	heigth: 30
@@ -61,6 +63,7 @@ var confirmPassFieldLabel = Ti.UI.createLabel({
 
 var confirmPassTextField = Ti.UI.createTextField({
 	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	value: "",
 	color: "#336699",
 	width: 250,
 	height: 30
@@ -138,30 +141,38 @@ var poundsConvertButton = Ti.UI.createButton({
 	height: 30,
 	right: 10
 });
-
+// converts U.S. dollars to British Pounds
 usConvertButton.addEventListener("click", function(e){
 	poundsTextField.value = usTextField.value * 1.33;
 });
-
+//converts British Pounds to U.S. dollars
 poundsConvertButton.addEventListener("click", function(e){
 	usTextField.value = poundsTextField.value / 1.33;
 });
 
-doneButton.addEventListener("click", function(e){
-	//if (userNameTextField.value >= 6 && userNameTextField.value <= 8){
-		//if (passTextField.value < 8 && passTextField.value == confirmPassTextField){
-			// var convertWin = Ti.UI.createWindow({
-			// modal: true,
-			// backgroundColor: "#0f628b"
-			// });
-			
-			convertWin.add(usTextLabel, usTextField, usConvertButton, poundsTextLabel, poundsTextField, poundsConvertButton);
-			navWin.openWindow(convertWin), {animate: true};
-		//}
+//Conditional for user Name and Password: When using this code the done Button does not work
+// Need to work on this some more to figure out the exact issue for why it is not working.
+
+var userPassLength = function(){
+	if (userNameTextField.value.length >= 6 && userNameTextField.value.length <= 8 && passTextField.value.length < 8 && passTextField.value.length){
 		
-	//}
+	} else if (passTextField.value == confirmPassTextField.value){
+		
+		convertWin.add(usTextLabel, usTextField, usConvertButton, poundsTextLabel, poundsTextField, poundsConvertButton);
+		navWin.openWindow(convertWin), {animate: true};
+	}
+	
+};
+
+doneButton.addEventListener("click", function(userPassLength){
+	
 	
 });
+
+// doneButton.addEventListener("click", function(e){		
+	// convertWin.add(usTextLabel, usTextField, usConvertButton, poundsTextLabel, poundsTextField, poundsConvertButton);
+	// navWin.openWindow(convertWin), {animate: true};	
+// });
 
 loginButton.addEventListener("click", function(e){
 	convertWin.add(usTextLabel, usTextField, usConvertButton, poundsTextLabel, poundsTextField, poundsConvertButton);
