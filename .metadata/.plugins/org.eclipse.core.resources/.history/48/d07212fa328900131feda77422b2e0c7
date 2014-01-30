@@ -139,14 +139,6 @@ var poundsConvertButton = Ti.UI.createButton({
 	right: 10
 });
 
-usConvertButton.addEventListener("click", function(e){
-	poundsTextField.value = usTextField.value * 1.33;
-});
-
-poundsConvertButton.addEventListener("click", function(e){
-	usTextField.value = poundsTextField.value / 1.33;
-});
-
 doneButton.addEventListener("click", function(e){
 	//if (userNameTextField.value >= 6 && userNameTextField.value <= 8){
 		//if (passTextField.value < 8 && passTextField.value == confirmPassTextField){
@@ -161,11 +153,6 @@ doneButton.addEventListener("click", function(e){
 		
 	//}
 	
-});
-
-loginButton.addEventListener("click", function(e){
-	convertWin.add(usTextLabel, usTextField, usConvertButton, poundsTextLabel, poundsTextField, poundsConvertButton);
-	navWin.openWindow(convertWin), {animate: true};
 });
 
 signUpButton.addEventListener("click", function(e){
@@ -184,6 +171,5 @@ signUpView.add(userNameLabel, userNameTextField, userInputHint, emailFieldLabel,
 signUpWin.add(signUpView);
 navWin.openWindow(signUpWin), {animate: true};
 });
-
 
 

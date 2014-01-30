@@ -76,10 +76,10 @@ var doneButton = Ti.UI.createButton({
 	height: 30
 });
 
-var convertWin = Ti.UI.createWindow({
-	modal: true,
-	backgroundColor: "#0f628b"
-});
+// var convertWin = Ti.UI.createWindow({
+	// modal: true,
+	// backgroundColor: "#0f628b"
+// });
 
 var usTextLabel = Ti.UI.createLabel({
 	text: "Enter U.S. Dollars",
@@ -139,21 +139,13 @@ var poundsConvertButton = Ti.UI.createButton({
 	right: 10
 });
 
-usConvertButton.addEventListener("click", function(e){
-	poundsTextField.value = usTextField.value * 1.33;
-});
-
-poundsConvertButton.addEventListener("click", function(e){
-	usTextField.value = poundsTextField.value / 1.33;
-});
-
 doneButton.addEventListener("click", function(e){
 	//if (userNameTextField.value >= 6 && userNameTextField.value <= 8){
 		//if (passTextField.value < 8 && passTextField.value == confirmPassTextField){
-			// var convertWin = Ti.UI.createWindow({
-			// modal: true,
-			// backgroundColor: "#0f628b"
-			// });
+			var convertWin = Ti.UI.createWindow({
+			modal: true,
+			backgroundColor: "#0f628b"
+			});
 			
 			convertWin.add(usTextLabel, usTextField, usConvertButton, poundsTextLabel, poundsTextField, poundsConvertButton);
 			navWin.openWindow(convertWin), {animate: true};
@@ -161,11 +153,6 @@ doneButton.addEventListener("click", function(e){
 		
 	//}
 	
-});
-
-loginButton.addEventListener("click", function(e){
-	convertWin.add(usTextLabel, usTextField, usConvertButton, poundsTextLabel, poundsTextField, poundsConvertButton);
-	navWin.openWindow(convertWin), {animate: true};
 });
 
 signUpButton.addEventListener("click", function(e){
@@ -184,6 +171,5 @@ signUpView.add(userNameLabel, userNameTextField, userInputHint, emailFieldLabel,
 signUpWin.add(signUpView);
 navWin.openWindow(signUpWin), {animate: true};
 });
-
 
 

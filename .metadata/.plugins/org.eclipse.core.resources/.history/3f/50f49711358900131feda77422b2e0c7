@@ -163,11 +163,6 @@ doneButton.addEventListener("click", function(e){
 	
 });
 
-loginButton.addEventListener("click", function(e){
-	convertWin.add(usTextLabel, usTextField, usConvertButton, poundsTextLabel, poundsTextField, poundsConvertButton);
-	navWin.openWindow(convertWin), {animate: true};
-});
-
 signUpButton.addEventListener("click", function(e){
 	
 	var signUpWin = Ti.UI.createWindow({
@@ -185,5 +180,20 @@ signUpWin.add(signUpView);
 navWin.openWindow(signUpWin), {animate: true};
 });
 
+loginButton.addEventListener("click", function(e){
+	
+	var signUpWin = Ti.UI.createWindow({
+		modal: true,
+		backgroundColor: "#0f628b"
+	});
+	
+	var signUpView = Ti.UI.createScrollView({
+		showVerticalScaleIndicator: true,
+		layout: "vertical"
+	});
 
+signUpView.add(userNameLabel, userNameTextField, userInputHint, emailFieldLabel, emailTextField, passLabelField, passTextField, passHintFieldLabel, confirmPassFieldLabel, confirmPassTextField, doneButton);
+signUpWin.add(signUpView);
+navWin.openWindow(signUpWin), {animate: true};
+});
 

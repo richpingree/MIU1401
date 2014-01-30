@@ -60,7 +60,7 @@ var signUpButton = Ti.UI.createButton({
 	
 });
 
-
+//var mediaFile = require('');
 var mediaFile2 = require('signup');
 
 

@@ -144,7 +144,7 @@ usConvertButton.addEventListener("click", function(e){
 });
 
 poundsConvertButton.addEventListener("click", function(e){
-	usTextField.value = poundsTextField.value / 1.33;
+	usTextField.ParseInt.value = poundsTextField.value / 1.33;
 });
 
 doneButton.addEventListener("click", function(e){

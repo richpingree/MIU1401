@@ -141,10 +141,7 @@ var poundsConvertButton = Ti.UI.createButton({
 
 usConvertButton.addEventListener("click", function(e){
 	poundsTextField.value = usTextField.value * 1.33;
-});
-
-poundsConvertButton.addEventListener("click", function(e){
-	usTextField.value = poundsTextField.value / 1.33;
+	
 });
 
 doneButton.addEventListener("click", function(e){
@@ -163,11 +160,6 @@ doneButton.addEventListener("click", function(e){
 	
 });
 
-loginButton.addEventListener("click", function(e){
-	convertWin.add(usTextLabel, usTextField, usConvertButton, poundsTextLabel, poundsTextField, poundsConvertButton);
-	navWin.openWindow(convertWin), {animate: true};
-});
-
 signUpButton.addEventListener("click", function(e){
 	
 	var signUpWin = Ti.UI.createWindow({
@@ -184,6 +176,5 @@ signUpView.add(userNameLabel, userNameTextField, userInputHint, emailFieldLabel,
 signUpWin.add(signUpView);
 navWin.openWindow(signUpWin), {animate: true};
 });
-
 
 
