@@ -153,26 +153,26 @@ poundsConvertButton.addEventListener("click", function(e){
 //Conditional for user Name and Password: When using this code the done Button does not work
 // Need to work on this some more to figure out the exact issue for why it is not working.
 
-// var userPassLength = function(){
-	// if (userNameTextField.value.length >= 6 && userNameTextField.value.length <= 8 && passTextField.value.length < 8 && passTextField.value.length){
-// 		
-	// } else if (passTextField.value == confirmPassTextField.value){
-// 		
-		// convertWin.add(usTextLabel, usTextField, usConvertButton, poundsTextLabel, poundsTextField, poundsConvertButton);
-		// navWin.openWindow(convertWin), {animate: true};
-	// }
-// 	
-// };
-// 
-// doneButton.addEventListener("click", function(userPassLength){
-// 	
-// 	
-// });
+var userPassLength = function(){
+	if (userNameTextField.value.length >= 6 && userNameTextField.value.length <= 8 && passTextField.value.length < 8 && passTextField.value.length){
+		
+	} else if (passTextField.value == confirmPassTextField.value){
+		
+		convertWin.add(usTextLabel, usTextField, usConvertButton, poundsTextLabel, poundsTextField, poundsConvertButton);
+		navWin.openWindow(convertWin), {animate: true};
+	}
+	
+};
 
-doneButton.addEventListener("click", function(e){		
-	convertWin.add(usTextLabel, usTextField, usConvertButton, poundsTextLabel, poundsTextField, poundsConvertButton);
-	navWin.openWindow(convertWin), {animate: true};	
+doneButton.addEventListener("click", function(userPassLength){
+	
+	
 });
+
+// doneButton.addEventListener("click", function(e){		
+	// convertWin.add(usTextLabel, usTextField, usConvertButton, poundsTextLabel, poundsTextField, poundsConvertButton);
+	// navWin.openWindow(convertWin), {animate: true};	
+// });
 
 loginButton.addEventListener("click", function(e){
 	convertWin.add(usTextLabel, usTextField, usConvertButton, poundsTextLabel, poundsTextField, poundsConvertButton);
